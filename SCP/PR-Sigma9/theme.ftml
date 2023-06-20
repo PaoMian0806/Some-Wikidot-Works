@@ -1,0 +1,1205 @@
+---
+site: scpdsandbox
+page: for-the-sake-of-the-foundation-sigma-9
+title: 今非昔比 - Sigma-9 外觀主題
+tags:
+  - theme
+revision: 372
+---
+[[module CSS]]
+
+/*@import url("http://scpdsandbox.wikidot.com//local--code/for-the-sake-of-the-foundation-sigma-9/1");*/
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url(http://manggwan.wdfiles.com/local--files/font%3Akouzanmouhitu/ThePeakFont.css);
+@import url('https://fonts.cdnfonts.com/css/megaton');
+@import url('https://fonts.cdnfonts.com/css/petitinho');
+               
+:root {
+    --box-border-color: orange;
+    --box-border-bottom-color: #ccc;
+    --boxborder-size: 5px;
+    --paper-color: #F1EDE9;
+    --paper-line: #94ACD4;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+}
+
+/* Header 2*/
+div#container-wrap {
+    background: url('http://scpdsandbox.wdfiles.com/local--files/css-test-001/Evethemebg') center top repeat-x;
+    background-size: 1300px;
+}
+
+#header {
+    height: 290px;
+    background-image: url('http://scpdsandbox.wikidot.com/local--files/css-test-001/evelogo');
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: 600px auto;
+}
+
+/* Top Bar */
+
+#top-bar {
+    display: flex;
+    justify-content: center;
+    top: 362px;
+    width: 100%;
+    z-index: 20;
+}
+
+#top-bar a {
+    color: #FCFBF9;
+    background: #00000044;
+}
+
+div#side-bar {
+    margin-top: 4.85rem;
+}
+
+#page-title,
+.meta-title {
+    color: #000000;
+    font-size: 2.1em;
+    font-weight: bold;
+    margin-top: 3.1em;
+}
+
+/* Header, Top Bar, Container-wrap Media */
+
+@media (min-width: 581px) and (max-width: 767px) {
+    #header {
+        background-size: 470px auto;
+    }
+    #top-bar {
+        top: 278px;
+    }
+    div#container-wrap {
+        background-size: 1000px;
+    }
+    div#side-bar {
+       margin-top: 0;
+    }
+    #page-title, .meta-title {
+        margin-top: 1.2em;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 580px) {
+    #header {
+        background-size: 450px auto;
+    }
+    #top-bar {
+        top: 278px;
+    }
+    div#container-wrap {
+        background-size: 1000px;
+    }
+    div#side-bar {
+        margin-top: 0;
+    }
+    #page-title, .meta-title {
+        margin-top: 1.2em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+    #header {
+        background-size: 440px auto;
+    }
+    #top-bar {
+        top: 278px;
+    }
+    div#container-wrap {
+        background-size: 1000px;
+    }
+    div#side-bar {
+        margin-top: 0;
+    }
+    #page-title, .meta-title {
+        margin-top: 1.2em;
+    }
+}
+
+@media (max-width: 320px) {
+    #header {
+        background-size: 420px auto;
+    }
+    #top-bar {
+        top: 278px;
+    }
+    div#container-wrap {
+        background-size: 1000px;
+    }
+    div#side-bar {
+        margin-top: 0;
+    }
+    #page-title, .meta-title {
+        margin-top: 1.2em;
+    }
+}
+
+#header h1 a {
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    text-shadow: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+#header h1 a::before {
+    content: " ";
+    color: #00000000;
+    width: 100%;
+    height: 100%;
+}
+
+#header h2,
+#header h1 a span,
+#header h2 span {
+    display: none;
+}
+
+/* Info Box */
+
+#page-content .creditRate{
+    margin: unset;
+    margin-bottom: 4px;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    box-shadow: 0px 0px 7px #999999;
+    border-radius: 0;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #333333;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #333333;
+    color: #ffffff;
+}
+ 
+.rate-box-with-credit-button .cancel {
+    border: solid 1px #ffffff;
+}
+
+/* Rate Box */
+
+.page-rate-widget-box {
+    box-shadow: 0px 0px 7px #999999;
+    margin: unset;
+    margin-bottom: 4px;
+    border-radius: 0;
+}
+ 
+div.page-rate-widget-box .rate-points {
+    background-color: #ffffff;
+    color: #333333;
+    border: solid 1px #ffffff;
+    border-radius: 0;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #ffffff;
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #333333;
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #333333;
+    color: #ffffff;
+}
+ 
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 0;
+}
+ 
+.page-rate-widget-box .cancel a {
+    color: #333333;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #333333;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/* Blockquote Div */
+
+div.blockquote,
+blockquote {
+    border: 3px double #d1d1d1 !important;
+    background-color: #f4f4f4 !important;
+    padding: 20px !important;
+}
+
+/* Page H1~H3 */
+
+#page-content h1, #action-area h1 {
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Petitinho', sans-serif;
+}
+
+#page-content h2,
+#page-title,
+#action-area h2 {
+    color: #1f1f1f;
+    font-family: 'Petitinho', sans-serif;
+    font-weight: bold;
+}
+
+#page-content h3, #action-area h3 {
+    color: #2b4cff;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: normal;
+}
+
+/* -=- TABBERS -=- */
+    
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-color: rgba(233, 233, 255, 0.7);
+    background-image: none;
+    border: none;
+    padding-bottom: 0.0625rem;
+}
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-color: rgb(172, 168, 182, 0.6);
+    background-image: none;
+    border: 0.125rem solid #e3e3e3;
+    color: #878790;
+    padding-bottom: 0.0625rem;
+}
+ 
+.yui-navset .yui-content {
+    background: white;
+    border: 0.125rem solid #e3e3e3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+ 
+.yui-navset .yui-nav {
+    padding-bottom: 0.0625rem;
+    border: none;
+}
+ 
+.yui-navset .yui-nav a em {
+    border: none;
+}
+
+/* -------- */
+
+/* Box Div */
+
+.box-page {
+  max-width: 80%;
+  margin: auto;
+}
+
+.box-container {
+  margin: 20px;
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.box-body {
+  position: relative;
+  padding: 10px;
+  width: 80%;
+  background: #444;
+  border-top: var(--boxborder-size) solid var(--box-border-color);
+  border-bottom: 2px solid var(--box-border-bottom-color);
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: inset 0 0 var(--box-border-size) #333;
+}
+
+.box-body:after {
+  position: relative;
+  top: var(--box-border-size);
+  left: 80%;
+  margin-left: -(var(--box-border-size));
+  width: 0;
+  height: 0;
+  border-left: var(--box-border-size) solid transparent;
+  border-right: var(--box-border-size) solid transparent;
+  border-top: var(--box-border-size) solid var(--box-border-color);
+}
+
+/* Date Text Div */
+
+/* .timer-block {
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+} */
+
+.timer-block {
+    font-family: Share Tech Mono, monospace;
+    color: black;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 0.25),  0 0 20px rgba(10, 175, 230, 0);
+    height: 100%;
+    margin: 15px;
+}
+
+    .timer-block .time-text {
+        letter-spacing: 0.05em;
+        font-size: 36px;
+    }
+    .timer-block .time-date {
+        letter-spacing: 0.05em;
+        font-size: 16px;
+        padding: 25px;
+    }
+     .timer-block .normal-text {
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        padding-top: 50px;
+    }
+
+/* Note Div 1 */
+
+.notepaper {
+  position: relative;
+  margin: 30px auto;
+  padding: 29px 20px 20px 45px;
+  width: 280px;
+  line-height: 30px;
+  color: #6a5f49;
+  text-shadow: 0 1px 1px white;
+  background-color: #f2f6c1;
+  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  border: 1px solid #c3baaa;
+  border-color: rgba(195, 186, 170, 0.9);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+  font-family: Homemade Apple, ThePeakFont, cursive;
+}
+
+.notepaper:before, .notepaper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.notepaper:before {
+ left: 28px;
+  width: 2px;
+  border: solid #efcfad;
+  border-color: rgba(239, 207, 173, 0.9);
+  border-width: 0 1px;
+}
+
+.notepaper:after {
+  z-index: -1;
+  left: 0;
+  right: 0;
+  background: rgba(242, 246, 193, 0.9);
+  border: 1px solid rgba(170, 157, 134, 0.7);
+  -webkit-box-shadow: 5px 5px 9px 1px #000000; 
+  box-shadow: 5px 5px 9px 1px #000000; 
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+/* Note Div 2 */
+
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 80%;
+}
+.letter:before, .letter:after {
+  content: '';
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+
+/* Two div in the same line */
+
+   .outerDiv
+   {
+   background-color: #006699;
+   color: #fff;
+   height: 400px;
+   width: 600px;
+   margin: 0px auto;
+   padding: 5px;
+   }
+   .leftDiv
+   {
+   background-color: #efefef;
+   color: #000;
+   height: 400px;
+   width: 48%;
+   float: left;
+   }
+   .rightDiv
+   {
+   background-color: #efefef;
+   color: #000;
+   height: 400px;
+   width: 48%;
+   float: right;
+   }
+
+.testdiv p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.papersheet {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 1.2;
+    color: #8A9199;
+    display: block;
+    height: auto;
+    max-width: 50%;
+    overflow: auto;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 1px;
+    font-weight: 120;
+    transition: all 400ms cubic-bezier(0.165, 0.840, 0.440,  1.000);
+    background-color: #FFF;
+}
+
+.papersheet:hover {
+  animation-name: bigger;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+/* papersheet content wrapper style */
+
+.papersheet-content {
+}
+
+@keyframes bigger {
+    20% {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    }
+    40% {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    60% {
+      box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+    }
+    80% {
+      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3), 0 14px 12px 0 rgba(0, 0, 0, 0.17); 
+    }
+    100% {
+       box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* .top {
+  width: 100%;
+  height: 50px;
+  background: #333;
+  border-radius: 5px 5px 0 0;
+} */
+
+.paper {
+  margin: 26px auto 0;
+  position: relative;
+  width: 75%;
+  height: 100%;
+  max-width: 450px;
+  min-height: 50vh;
+  padding: 35px 20px;
+  background: repeating-linear-gradient(var(--paper-color), var(--paper-color) 31px, var(--paper-line) 31px, var(--paper-line) 32px);
+  font-family: 'Shadows Into Light', cursive;
+  line-height: 32px;
+  outline: 0;
+  font-size: 22px;
+}
+
+.paper:after {
+  content: ''';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 5px 5px 0 0;
+}
+
+.testerb {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Petitinho', sans-serif;
+    font-weight: bold;
+    width: 35vw;
+    background-color: #000;
+    border: 0.125rem solid #000;
+    clip-path: polygon(25% 0%, 80% 0%, 50% 100%, 0% 100%);
+    padding: 50px;
+}
+
+.testerb:before {
+    z-index: 2;
+    position: absolute;
+    color: black;
+    left: 10%;
+    content: 'PLAYER';
+    width: 90vw;
+    background-color: #FFF;
+    border: 0.125rem solid #000;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.testera {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Petitinho', sans-serif;
+    font-weight: bold;
+    width: 80vw;
+    height: 100px;
+    /*background-color: #000;
+    border: 0.125rem solid #000;*/
+}
+
+.testera:before {
+    content: '';
+    position: absolute;
+    font-weight: bold;
+    width: 35vw;
+    height: 100px;
+    background-color: #ABC;
+    border: 0.125rem solid #000;
+    clip-path: polygon(25% 0%, 80% 0%, 50% 100%, 0% 100%);
+}
+
+/*.testera:after {
+    position: absolute;
+    color: black;
+    left: 20%;
+    content: 'PLAYER';
+    text-indent: .75em;
+    width: 40vw;
+    background-color: #FFF;
+    border: 0.125rem solid #000;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}*/
+
+.testera-b { /*箭頭*/
+    position: absolute;
+    box-sizing: border-box;
+    color: black;
+    left: 13%;
+    width: 36vw;
+    height: 20px;
+    background-color: #000;
+    border: 0.125rem solid #000;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.testera-b:before {
+    position: relative;
+    content: 'K. Ponomarenko';
+    display: inline-block;
+    white-space: pre;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-left: -5px;
+   /* right: 25%;*/
+    top: 1px;
+    background-color: #FFF;
+    clip-path: inherit;
+}
+
+[[/module]]
+
+[[iftags +theme]]
+
+[[include info:start]]
+
+[[include info:end]]
+
+@@ @@
+
+[[=]]
+
+//I thought you died alone,//
+//.//
+
+//A long long time ago.//
+//.//
+
+//Oh no, not me!//
+//.//
+
+//We never lost control.//
+//.//
+
+//You're face to face,//
+//.//
+
+//With the man who sold the world.//
+//.//
+
+//**- [https://youtu.be/IU2wBKoDOzg David Bowie, The Man Who Sold the World] -**//
+[[/=]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+
+[[image http://scpdsandbox.wdfiles.com/local--files/pao-mian-s-file/FTSF-Title]]
+----
+
+= **Q：** 這是什麼東西？
+
+[[div class="blockquote"]]
+
+**A：** 你正在看的是「今非昔比」外觀主題，這是一個專為SCP基金會的《轉世計劃，Project Reincarnation》世界線而製作的Sigma-9主題，由我—[[*user Pao Mian]]自行製作並送給[[*user k1s10r0db00ne]]。今非昔比主要受到了[[[http://scp-zh-tr.wikidot.com/k1s10r0d-s-proposal|K1s10r0d的提案]]]以及[[[http://scp-zh-tr.wikidot.com/scp-zh-993|SCP-ZH-993]]]的啟發，並在參考一些跟轉世計劃相關的作品之後，另行修改的全新外觀主題。
+
+[[/div]]
+
+= **Q：** 主要的特色？
+
+[[div class="blockquote"]]
+
+**A：** 今非昔比所採取的製作核心，與先前的「[[[http://scp-zh-tr.wikidot.com/theme:the-future-is-here-sigma-9|未來就在這裡]]]」主題有些不同。今非昔比主要採用了已解散的SCP基金會設定，並以EVE Electronics & Entertainment Ltd.作為主角來對整體的頁面進行相對應修改。同時也添加了幾個額外的Div Blocks可以幫助部分作者撰寫文章（實用例子詳見下方的示例段落），與此同時，還專門修正一些部分組件或是文字排版上的閱讀問題，試圖提升整體的閱讀體驗。
+
+[[/div]]
+
+@@ @@
+
+@@ @@
+
+以下是此外觀主題的展示：
+
+@@ @@
+@@ @@
+@@ @@
+
+[[include component:image-block name=https://i.imgur.com/5ad6xsE.png|caption=Antares Techonology Ltd. 的太空計劃。]]
+
++ Header 1 號標題
+
+++ Header 2 號標題
+
++++ Header 3 號標題
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [http://scp-zh-tr.wikidot.com/project-reincarnation Ut enim ad minim veniam], //quis nostrud// **exercitation ullamco** //**laboris nisi ut aliquip**// ex ea commodo consequat. Duis aute irure dolor in reprehenderit[[footnote]]Footnote[[/footnote]] in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+房省工到收遊課器業校。來師海。個面動沒聽景寫節！早一人人好智於裡術說前縣對們道友布，有收習同表便，解上錢化建行作到子生，一中死可較居的負力進規、臺的直產手有展代學們有功斷法車意操世用家克久國其臺。理麼火然裡媽回望況//大人問形來天顧積通全斯也//**但的現現放簡和他文便文中**，//**留壓氣養切**//……[http://scp-zh-tr.wikidot.com/project-reincarnation 自走房去定走只火便]：己多過歡就，管不對與母氣，條馬不日美讓自統出上[[footnote]]注腳[[/footnote]]，眾車情很師之度考，東我出場！
+
+[[collapsible show="Collapsible!" hide="~ hide collapsible ~"]]
+
+[[/collapsible]]
+
+[[collapsible show="這是摺叠頁！" hide="~ 叠回去 ~"]]
+
+[[/collapsible]]
+
+> 我
+>
+>> 是
+>>
+>>> 阿
+>>>
+>>>> 氧
+@@ @@
+[[tabview]]
+[[tab 有内容的tag]]
+
+嗯……她擁有每個種族之中美醜之間最平衡的人——的之間最平衡的樣貌，這使她看上去儘管理性認爲平庸，但站在一般人審美的角度，是的，美人……但那不自然的放鬆神情，彷彿她不是人一樣……她的髮絲，深棕黑色的，但在光線的照耀下，帶些青藍的光澤，有一種像淺水養育的貝母色潤。
+
+[[/tab]]
+[[tab 空的Tab]]
+
+[[/tab]]
+[[tab 有很長内容的tag]]
+二
+
+將媽
+
+專父長
+
+手優黨區
+
+雲一什次成
+
+國別門我香任
+
+家不創一溫進學
+
+的的後於理實去具
+
+深就人的人父下到就
+
+那保的物在往資為產社
+
+神手河無古動牛聲合調也
+
+們反大同想社結有員麼保白
+
+樣史上氣作比還假文因生就事
+
+大飛苦議她自大究國下聞樹視王
+
+提方學還國不始史後希心屋團臺只
+
+進斷童體點的物大白了來年稱下爸本
+
+食謝視關只天道體有黃院布影離世方家
+
+離觀回意不氣紅沒看上程動向是紙不負過
+
+問我怎語產想紀管在們消斷料回同把議之太
+
+性期足先大之為現沒得面負花經寶乎數意舉設
+
+離重什為理無不有回高來於而會益是求即門得果
+
+在動全法之歷後子不格一生出用自公男發一盡西特
+
+這自性力即風月天會考他圖聞然團樣反時計有不新龍
+
+子都地種以時智心當城解時不樂課眼元八生地平子而活
+
+保子提備死持線記強乎新見提果戰了展健親四評一商引他
+
+是北已會情簡藝我下取百微教格何是石正立自者紅生情古還
+
+病雄這藝汽新報在得政覺理當市衣為留國我球叫那認對容業由
+
+家都西史里社笑大存國能房中死話初老料小二利一進車子始再無
+
+雄男底這故下發方車至式士字期個錯地沒林家的事成行成身電重工
+
+破道說遊而在要長來面臺不有早心馬性到不及門有法組經結間小新題
+[[/tab]]
+[[tab 有其他東東的Tab]]
+
++ Header in the Tabber
+
+++ Header in the Tabber But Smaller
+
++++ Header in the Tabber But Small-smaller
+
+Text — [http://scp-zh-tr.wikidot.com/project-reincarnation 轉世計劃]
+
+----
+
+> Quote One
+>> (Quote Two)
+
+[[/tab]]
+[[/tabview]]
+@@ @@
+||~ 表格 ||~ k1s10r0d ||
+|| 這是 || 什麽 ||
+|||| 東東？？？！！ ||
+@@ @@
+[[footnoteblock]]
+
+自定義Div Blocks（Extra Div Blocks）
+
+@@ @@
+
+**1. 改良版終端機**
+
+@@ @@
+
+**2. 手寫筆記**
+
+@@ @@
+這是一個手寫筆記的Div Blocks，語法如下：
+@@ @@
+
+> @@[[div class="notepaper"]]@@
+> @@填入你要的文字@@
+> @@[[/div]]@@
+
+@@ @@
+具體範例如下：
+@@ @@
+
+[[div class="notepaper"]]
+
+WASTELAND
+@@ @@
+Neviim，你說過，你願意為我分擔一切痛苦，但先走一步的不應該是你；是我才對。而我始終不明白為什麼會這樣，至從我開始與惡魔交易的那一刻就已經死了，不是嗎？對於這個亂世而言我就是那般令人作嘔的存在，害死了諸多親人跟肩負重任的同志，也是拉斯普斯（Laplace）的其中一枚棋子，最終將人類的希望逼到死角，毫無退路可言。即便如此，原先覺得有你陪伴的那一刻，自己仍然有著一絲救贖，對我而言你就是那個主，我視野中的一切，即便你只是由0跟1組成的仿生也好，我不在乎。就算我繼續活在這個世上一分一秒都覺得痛苦不堪，你仍是我堅持下去的信念。
+@@ @@
+失去了你，廢土就只是廢土。
+@@ @@
+Чему́ быть, того́ не минова́ть.
+[[/div]]
+
+@@ @@
+目前字體還不支持俄語，之後會再更新。
+@@ @@
+
+**2.1. 手寫筆記**
+
+@@ @@
+
+[[div class="letter"]]
+
+**發現報告：** 2184年8月25日21時32分，賓夕凡尼亞邦分部的阿倫敦區清道夫小隊正在執行區域掃蕩拾遺行動，人員搜索於行動路線内的好牧羊人康復院時，由PAS-503發現Kislorod Ponomarenko；當時對象内置的核能呈電池耐久度耗盡，倒臥於康復院地面辦公室間。
+@@ @@
+清道夫503發現對象軀體背部的容器輻射出β射線，這引起了503的注意，人員隨即通知小隊隊長。前往查看的副隊長發現容器内裝載有Ponomarenko的大腦，并且在被輻射污染後仍有生命跡象，便將其帶回賓夕凡尼亞邦分部，神機研究部門開始介入。
+[[/div]]
+
+@@ @@
+
+[[div class="paper"]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies odio vel laoreet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vestibulum eros vel nunc iaculis, eget rutrum ipsum suscipit. Mauris et velit sagittis, fringilla sapien rutrum, euismod quam. Nullam finibus, sapien elementum molestie dignissim, libero odio aliquet dolor, ac lobortis leo nunc id justo. Suspendisse dignissim enim volutpat, porta dolor eu, convallis leo. Maecenas turpis dolor, sollicitudin et turpis id, placerat pulvinar turpis. Phasellus vehicula eleifend nulla, maximus pulvinar
+[[/div]]
+
+@@ @@
+
+**3. ACS分級改良**
+
+@@ @@
+ACS分級組件在轉世計劃中的世界觀顯得格外突兀/不適合，因此也建議不使用。但還是以防萬一，今非昔比有特地為該組件進行一些更改。
+@@ @@
+
+4. Better Footnotes
+
+@@ @@
+
+5. EVE
+
+@@ @@
+
+6. Unknown Blocks
+
+[[div class="box-page"]]
+[[div class="box-container"]]
+
+[[div class="box-body"]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies odio vel laoreet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vestibulum eros vel nunc iaculis, eget rutrum ipsum suscipit. Mauris et velit sagittis, fringilla sapien rutrum, euismod quam. Nullam finibus, sapien elementum molestie dignissim, libero odio aliquet dolor, ac lobortis leo nunc id justo. Suspendisse dignissim enim volutpat, porta dolor eu, convallis leo. Maecenas turpis dolor, sollicitudin et turpis id, placerat pulvinar turpis. Phasellus vehicula eleifend nulla, maximus pulvinar
+[[/div]]
+
+[[/div]]
+
+[[div class="box-container"]]
+
+[[div class="box-body"]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies odio vel laoreet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vestibulum eros vel nunc iaculis, eget rutrum ipsum suscipit. Mauris et velit sagittis, fringilla sapien rutrum, euismod quam. Nullam finibus, sapien elementum molestie dignissim, libero odio aliquet dolor, ac lobortis leo nunc id justo. Suspendisse dignissim enim volutpat, porta dolor eu, convallis leo. Maecenas turpis dolor, sollicitudin et turpis id, placerat pulvinar turpis. Phasellus vehicula eleifend nulla, maximus pulvinar
+
+[[/div]]
+
+[[div class="upArrow"]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+@@ @@
+
+[[div style="border-top: 4px double #000000; width: 100%; border-bottom: none;"]]
+[[/div]]
+
+[[div class="timer-block"]]
+[[span class="time-date"]]2145/02/12 - Fri[[/span]]
+
+[[span class="time-text"]]15:11:23 P.M [[/span]]
+
+[[span class="normal-text"]]EVE Electronics Ltd. - 行政大樓頂樓[[/span]]
+[[/div]]
+
+[[div style="border-top: 4px double #000000; width: 100%; border-bottom: none;"]]
+[[/div]]
+
+@@ @@
+
+[[div style="border-top: 4px dotted #7f9aeb; border-bottom: none;"]]
+[[div class="i-amphtml-hidden-by-media-query" style="background: #ffffff; width: 80px; height: 30px; text-align: center; margin: -25px auto 0.5em auto;"]]
+CHAPTER I.
+[[/div]]
+[[/div]]
+
+@@ @@
+
+[[div style="border: 3px double #d1d1d1; background-color: #f4f4f4; padding: 20px;"]]
+= 「人若對因果論抱有信仰，即其潛意識將不可避免的皈依拉普拉斯惡魔。」
+@@ @@
+= 如果你認爲命運是注定的，那你現在想要放棄了嗎？
+@@ @@
+= 現在放棄，你的過去就再也沒有意義了
+[[/div]]
+
+@@ @@
+
+[[div class="testdiv"]]
+[[span style="width:50%; padding-right: 10px;"]]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies odio vel laoreet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vestibulum eros vel nunc iaculis, eget rutrum ipsum suscipit. Mauris et velit sagittis, fringilla sapien rutrum, euismod quam. Nullam finibus, sapien elementum molestie dignissim, libero odio aliquet dolor, ac lobortis leo nunc id justo. Suspendisse dignissim enim volutpat, porta dolor eu, convallis leo. Maecenas turpis dolor, sollicitudin et turpis id, placerat pulvinar turpis. Phasellus vehicula eleifend nulla, maximus pulvinar[[/span]]
+[[span style="width: 50%; border-left: 1px solid black; padding-left: 10px;"]]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies odio vel laoreet pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vestibulum eros vel nunc iaculis, eget rutrum ipsum suscipit. Mauris et velit sagittis, fringilla sapien rutrum, euismod quam. Nullam finibus, sapien elementum molestie dignissim, libero odio aliquet dolor, ac lobortis leo nunc id justo. Suspendisse dignissim enim volutpat, porta dolor eu, convallis leo. Maecenas turpis dolor, sollicitudin et turpis id, placerat pulvinar turpis. Phasellus vehicula eleifend nulla, maximus pulvinar[[/span]]
+[[/div]]
+
+@@ @@
+
+https://cjkfonts.io/blog/ThePeakFont
+
+@@ @@
+----
+
+[[collapsible show="+ code" hide="- hide"]]
+
+[[code type="css"]]
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+:root {
+    --box-border-color: orange;
+    --box-border-bottom-color: #ccc;
+    --boxborder-size: 5px;
+}
+
+/* Box Div */
+
+.box-page {
+  max-width: 80%;
+  margin: auto;
+}
+
+.box-container {
+  margin: 20px;
+  margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.box-body {
+  position: relative;
+  padding: 10px;
+  width: 80%;
+  background: #444;
+  border-top: var(--boxborder-size) solid var(--box-border-color);
+  border-bottom: 2px solid var(--box-border-bottom-color);
+  color: white;
+  font-family: georgia;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: inset 0 0 var(--box-border-size) #333;
+}
+
+.upArrow {
+  position: absolute;
+  top: var(--box-border-size);
+  left: 80%;
+  margin-left: -(var(--box-border-size));
+  width: 0;
+  height: 0;
+  border-left: var(--box-border-size) solid transparent;
+  border-right: var(--box-border-size) solid transparent;
+  border-top: var(--box-border-size) solid var(--box-border-color);
+}
+
+/* Date Text Div */
+
+/* .timer-block {
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+} */
+
+.timer-block {
+    font-family: Share Tech Mono, monospace;
+    color: black;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1.0),  0 0 20px rgba(10, 175, 230, 0);
+    height: 100%;
+    margin: 15px;
+}
+
+    .timer-block .time-text {
+        letter-spacing: 0.05em;
+        font-size: 36px;
+    }
+    .timer-block .time-date {
+        letter-spacing: 0.05em;
+        font-size: 16px;
+        padding: 25px;
+    }
+     .timer-block .normal-text {
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        padding-top: 50px;
+    }
+
+/* Note Div 1 */
+
+.notepaper {
+  position: relative;
+  margin: 30px auto;
+  padding: 29px 20px 20px 45px;
+  width: 280px;
+  line-height: 30px;
+  color: #6a5f49;
+  text-shadow: 0 1px 1px white;
+  background-color: #f2f6c1;
+  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  border: 1px solid #c3baaa;
+  border-color: rgba(195, 186, 170, 0.9);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+}
+
+.notepaper:before, .notepaper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.notepaper:before {
+ left: 28px;
+  width: 2px;
+  border: solid #efcfad;
+  border-color: rgba(239, 207, 173, 0.9);
+  border-width: 0 1px;
+}
+
+.notepaper:after {
+  z-index: -1;
+  left: 0;
+  right: 0;
+  background: rgba(242, 246, 193, 0.9);
+  border: 1px solid rgba(170, 157, 134, 0.7);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/iftags]]
+
+@@ @@
+
+[[include :scp-wiki:component:earthworm
+| first=true| last=true | hub=yes
+| previous-url= | previous-title=
+| next-url= | next-title=
+| hub-url=http://scp-zh-tr.wikidot.com/wanderer:project-reincarnation-hub | hub-title=Project Reincarnation
+]]
+
+[[div class="papersheet"]]
+
+Poo
+
+[[/div]]
+
+[[module CSS]]
+
+.earthworm .hub:hover {
+    margin: -3px 0;
+    border: 3px rgba(150,150,150,0.5) solid;
+    background: linear-gradient(10deg, rgba(150,150,150,0.1), rgba(150,150,150,0));
+    position: relative;
+    z-index: 5;
+    animation-name: bigger;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+[[/module]]
+
+[!-- [[div class="testerb"]]
+
+[[/div]]
+
+@@ @@
+
+[[div class="testera"]]
+@@ @@
+[[/div]]
+
+@@ @@
+
+[[div class="testera"]]
+[[div class="testera-b"]]
+Kislorod Ponomarenko
+[[/div]]
+[[/div]] --]
